@@ -15,3 +15,17 @@ public class Autos {
         System.out.println("El auto "+ marca + " de color "+ color+" arranco");
     }
 }
+
+ class Auto_electrico extends Autos {
+    private int niveldebateria;
+
+    public Auto_electrico(String marca, String color, int patente,int niveldebateria){
+        super(marca, color, patente);
+        this.niveldebateria = niveldebateria;
+    }
+    
+    public void cargarbateria(){
+        this.niveldebateria = 100;
+        System.out.println("La bateria cargo al 100");
+    }
+}
